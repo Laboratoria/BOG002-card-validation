@@ -22,7 +22,7 @@ img{
 
 div1{
     background-color:#A7C7C5;
-    display: inline-block;
+    display: block;
     padding: 20px;
     margin:38px 80px 50px 80px;
     border-radius:20px;
@@ -30,18 +30,12 @@ div1{
     color:rgb(255, 255, 255);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     box-shadow: 2px 4px 15px 5px #000;
-     }
+    }
 
 form input{
-<<<<<<< HEAD
         display:block;    
         color:rgb(9, 9, 90);
         border-radius: 10px;        
-=======
-    display:block;    
-    color:rgb(39, 112, 134);
-    border-radius: 10px;        
->>>>>>> 5ced9fec0e4ec16c8198fe06cab31b4805c283ef
 }
 
 
@@ -62,7 +56,3 @@ select, button{
     color:rgb(255, 255, 255);
     border-radius: 10px; 
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> 5ced9fec0e4ec16c8198fe06cab31b4805c283ef
