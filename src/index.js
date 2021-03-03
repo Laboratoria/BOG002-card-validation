@@ -1,4 +1,5 @@
-import validator from './validator.js';
+import validator from './validator.js'
+
 
 console.log(validator);
 
@@ -16,13 +17,11 @@ console.log ('resultado -->' , reverseCardNumber);
 let botonValidar = document.getElementById("validate");
 botonValidar.onclick = darClick;
 
+function darClick(){
+    let IngresarNumeroTar= document.getElementById("numeroDeTarjeta").value;
+    console.log(IngresarNumeroTar);
 
-
- function darClick(){
-    let IngresarNumero= document.getElementById("numeroDeTarjeta").value;
-    console.log(nombre);
-
-  }
+}
 
 
     

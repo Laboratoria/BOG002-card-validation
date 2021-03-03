@@ -1,6 +1,6 @@
 const validator = {
   luhnAlgorithm,
-
+  
 };
 
 
@@ -63,7 +63,7 @@ function luhnAlgorithm(numero){
   let resultadoSuma = 0;
 
   for (let i = 0; i < reverseArrayNumber.length; i++){
-      resultadoSuma = resultadoSuma + Number(reverseArrayNumber[i]); // 6,5,6
+     resultadoSuma = resultadoSuma + Number(reverseArrayNumber[i]); // 6,5,6
       
    
   }  
@@ -77,7 +77,7 @@ function luhnAlgorithm(numero){
 
   //let result = Number(reverseNumber) 
 
-  return resultadoSuma 
+  return resultadoSuma
   
   
 }

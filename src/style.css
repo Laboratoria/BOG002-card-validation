@@ -3,7 +3,7 @@ body{
     
 }
 h1{
-    background-color:rgb(65, 106, 168);
+    background-color:rgb(129, 185, 202);
     display: block;
     padding: 10px 20px 5px 20px;
     color:rgb(255, 255, 255);
@@ -11,7 +11,7 @@ h1{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 30px 10px 30px 10 px;
     border-radius:20px;
-    text-shadow:2px 2px 2px  rgb(146, 173, 223);
+    text-shadow:2px 2px 2px  rgb(39, 112, 134);
       
 }
 img{
@@ -21,7 +21,7 @@ img{
      }
 
 div1{
-    background-color:rgb(65, 106, 168);
+    background-color:#A7C7C5;
     display: inline-block;
     padding: 20px;
     margin:38px 80px 50px 80px;
@@ -34,13 +34,13 @@ div1{
 
 form input{
     display:block;    
-    color:rgb(9, 9, 90);
+    color:rgb(39, 112, 134);
     border-radius: 10px;        
 }
 
 
 div2{
-    background-color:rgb(70, 117, 187);
+    background-color:#A7C7C5;
     display:inline-block;
     position: absolute; top:130px; left:450px; right:450px; bottom:200px;
     padding: 40px 60px 60px 60px;
@@ -52,7 +52,7 @@ div2{
      }
           
 select, button{
-    background-color:rgb(9, 9, 90);
+    background-color:rgb(41, 135, 148);
     color:rgb(255, 255, 255);
     border-radius: 10px; 
     }
