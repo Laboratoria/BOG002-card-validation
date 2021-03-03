@@ -42,7 +42,7 @@ form input{
 div2{
     background-color:rgb(70, 117, 187);
     display:inline-block;
-    position: absolute; top:130px; left:450px; right:450px; bottom:200px;
+    position: absolute; top:130px; left:450px; right:450px; bottom:150px;
     padding: 40px 60px 60px 60px;
     border-radius:20px;
     text-align:left;

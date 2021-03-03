@@ -7,7 +7,7 @@ function invertirNumero (numero) {
   let stringNumber = numero.toString( );//cadena de caracteres en formato numero (toString encadena)
   let arrayNumber = stringNumber.split('');//array es un conjunto de datos en formato numero/split divide la cadena de caracteres
   let reverseArrayNumber=arrayNumber.reverse();//aplicamos la funcion reverse a nuestro array
- return reverseArray;
+  return reverseArray;
 }
 
 
@@ -19,7 +19,7 @@ function luhnAlgorithm(numero){
 
 
 
-   for (let i=0; i < reverseArrayNumber.length; i++) {//condicional, con variable de control
+  for (let i=0; i < reverseArrayNumber.length; i++) {//condicional, con variable de control
    console.log('posicion-->',i, 'val->', reverseArrayNumber[i]);
 
    let validarnumeros=i%2;//si el residuo es = a 0 es par, si el residuo es = a 1 es impar
@@ -52,20 +52,26 @@ function luhnAlgorithm(numero){
  
   
     }
-     console.log("array con validacion de pares->",reverseArrayNumber);
+   console.log("array con validacion de pares->",reverseArrayNumber);
    
-     let resultadoSuma=0;
-     for (let i= 0; i < reverseArrayNumber.length; i++) {
-     resultadoSuma = resultadoSuma+ Number(reverseArrayNumber[i]);
-     }
+   let resultadoSuma=0;
+   for (let i= 0; i < reverseArrayNumber.length; i++) {
+   resultadoSuma = resultadoSuma+ Number(reverseArrayNumber[i]);
+   }
     
-     
-     //let sumaArray= reverseArrayNumber.reduce((acc,item)=>{
-      // return acc = acc+item;
-     
+   let ResultadoFinalTar
+    ResultadoFinalTar= resultadoSuma%10;
+
+    if (validarnumeros===0){
+    console.log('tarjeta válida');
+    }
+    else
+    {
+      console.log ('tarjeta inválida');
+     }
   
   console.log(resultadoSuma)    
-  return''
+  return''  
 
-
+  
 export default validator;

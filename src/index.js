@@ -1,4 +1,4 @@
-import validator from "./validator";
+import validator from "./validator.js";
 
 //esta funcion contiene las variables para revesar nuestro valor
 let creditNumber=5775;
@@ -18,12 +18,11 @@ function darClick(){
 
  
  
- console.log (valor);
- console.log(invertirNumero(valor));
-
- 
-//import validator from './validator.js'//
+ console.log (creditNumber);
+ console.log(invertirNumero(creditNumber));
 
 
-//console.log(validator)//
+
+
+console.log(validator)//
 
