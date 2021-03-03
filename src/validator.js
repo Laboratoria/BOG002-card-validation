@@ -1,6 +1,7 @@
 
 const validator = {
   luhnAlgorithm,
+  
 };
 
 function invertirNumero (numero) {
@@ -44,10 +45,14 @@ function luhnAlgorithm(numero){
             }
           
 
+  for (let i = 0; i < reverseArrayNumber.length; i++){
+     resultadoSuma = resultadoSuma + Number(reverseArrayNumber[i]); // 6,5,6
       
     }
 
-      console.log('posicion'+i+'valor->'+reverseArrayNumber[i]);
+  //let result = Number(reverseNumber) 
+
+  return resultadoSuma
   
  
   
@@ -68,4 +73,5 @@ function luhnAlgorithm(numero){
   return''
 
 
+}
 export default validator;
