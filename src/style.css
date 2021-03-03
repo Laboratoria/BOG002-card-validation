@@ -33,9 +33,15 @@ div1{
      }
 
 form input{
+<<<<<<< HEAD
         display:block;    
         color:rgb(9, 9, 90);
         border-radius: 10px;        
+=======
+    display:block;    
+    color:rgb(9, 9, 90);
+    border-radius: 10px;        
+>>>>>>> 5ced9fec0e4ec16c8198fe06cab31b4805c283ef
 }
 
 
@@ -56,3 +62,7 @@ select, button{
     color:rgb(255, 255, 255);
     border-radius: 10px; 
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5ced9fec0e4ec16c8198fe06cab31b4805c283ef
