@@ -1,21 +1,30 @@
 import validator from './validator.js'
 
 
-console.log(validator);
+//esta funcion contiene las variables para revesar nuestro valor
+let creditNumber=5775;
+
+let reverseCardNumber= validator.luhnAlgorithm(creditNumber);
+
+console.log('resultado-->', reverseCardNumber);
+
+let botonValidar=document.getElementById('validate');
+botonValidar.onclick= darClick;
+
+function darClick(){
+  let IngresarNumeroTar=document.getElementById('numero tarjeta'.value);
+  console.log(IngresarNumeroTar);
+}
 
 
-    
-let creditCardNumber = 4356789024517953;
+ 
+ 
+ console.log (valor);
+ console.log(invertirNumero(valor));
 
+ 
+//import validator from './validator.js'//
 
-
-
-let reverseCardNumber = validator.luhnAlgorithm(creditCardNumber);
-
-console.log ('resultado -->' , reverseCardNumber);
-
-let botonValidar = document.getElementById("validate");
-botonValidar.onclick = darClick;
 
 function darClick(){
     let IngresarNumeroTar= document.getElementById("numeroDeTarjeta").value;
