@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Valida tu tarjeta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css" />
-    <link link rel="preconnect" href="https://fonts.gstatic.com">
     </head>
   <body>
-    <h1>La tienda para tu mascota</h1>
+    <h1>LA TIENDA PARA TU MASCOTA</h1>
      <div class="container">
         <section class="formulario" id="formulario">
          <form>
@@ -18,11 +18,6 @@
            <label for = "email">   E-mail:  </label> <input type="email" required="">
            <label for = "numberCard">Numero de tarjeta: </label> <input type="number" required="" id="numeroDeTarjeta">
            <b><button type='button' id='validate'>Validar</button></b>
-           <select name="Tarjeta" id="typecard">
-           <option>MasterCard</option>
-           <option>Dinners</option>
-           <option>Visa</option>
-           </select> 
          </form>
        </section>
        <section>
@@ -30,6 +25,7 @@
           <div class="card">
             <div class="MasterCard"></div>
             <div class="chip"></div>
+            <div class="card-number"></div>
             <div class ='meta'></div> 
             <div class ='exp-date'></div>
             <h2 id='result'></h2>

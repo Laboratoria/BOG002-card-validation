@@ -1,52 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;700&display=swap');
 body{
     margin: 0;
     }
 
    .container{
-        width: 100vw;
-        height: 100vh;
+        width: 200vw;
+        height: 200vh;
         display: flex ;
         align-items:flex-start;
-        background-image: url(IMG/fondo1.png);
+        background-image: url(IMG/fondo2.png);
       }
        
      h1{
-     background-color:rgb(65, 106, 168);
+     background-color:#384D59 ;
      display:block;
      padding: 10px 20px 5px 20px;
      color:rgb(255, 255, 255);
      text-align: center;
-     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
      margin: 30px 10px 30px 10 px;
      border-radius:20px;
-     text-shadow:2px 2px 2px  rgb(146, 173, 223);
-      
-     }
-     img{
-     width: 150px;
-     margin: 10px auto 10px;
-     display: block; 
+     text-shadow:2px 2px 2px #C1D9D9;
+     font-family:'Baloo Tammudu 2', 'cursive';
      }
 
+     img{
+     width: 200px;
+     margin:10px auto 10px;
+     display: block; 
+     
+   }
+
      .formulario{
-     background-color:rgb(65, 106, 168);
+     background-color:ivory;
      display: inline-block;
-     padding: 20px;
-     margin:38px 80px 50px 80px;
+     padding: 50px;
+     margin:38px 100px 50px 100px;
      border-radius:20px;
      text-align:left;
-     color:rgb(255, 255, 255);
-     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     font-weight:bolder;
+     font-size:larger;
+     color:rgb(50, 61, 158);
      box-shadow: 2px 4px 15px 5px #000;
+     font-family:'Handlee', cursive;  
      }
 
      form input{
         display:block;    
-        color:rgb(9, 9, 90);
-        border-radius: 10px;        
+        color:#384D59;
+        border-radius: 10px;
+        font-family:'Handlee', cursive;
+        margin:5px 5px 5px 5px;
+        width: 180px;
+        font-size:larger;
+                 
      } 
-
-
+     select, button{
+        display: flex;
+        background-color:#384D59;
+        color:rgb(255, 255, 255);
+        border-radius: 10px; 
+        font-family:'Handlee', cursive;  
+        font-size: x-large;
+        }
+       
      .card{
      width: 500px;
      height: 300px;
@@ -56,28 +73,49 @@ body{
      backdrop-filter:blur(7px);
      box-shadow: 4px 4px 4px black;
      cursor: pointer;
-     }
+     font-family:'Handlee', cursive; 
+     margin:100px 100px 50px 100px; 
+      }
 
      .MasterCard{
-         width: 80px;
-         height: 80px;
-         background:url(IMG/master.png)
-         no-repeat;
-         filter: brightness(1.75);
-         background-size: cover;
-         position:relative;
-         top:10px;
-         left: 380 px;
+     width: 80px;
+     height: 80px;
+     background:url(IMG/logo-mastercard-4096.png)
+     no-repeat;
+     filter: brightness(0.8);
+     background-size: cover;
+     position:relative;
+     top: 10px;
+     left: 370px;
      }
+
+     .chip{
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        background: url(IMG/chip-card.png);
+        background-size: cover;
+        position: relative;
+        top: 20px;
+        left: 40 px;
+     }
+
+     .card-number{
+        content: "1234 5678 9012";
+        width: 100px;
+        height: 100px;
+        position: relative;
+        top: 40px;
+        left: 50px;
+        font-family:initial;
+        font-size: 21 px;
+        letter-spacing: 5px;
+        color:rgb(9, 9, 90);
+        text-shadow: 1px 1px 8px;
+
+     }
+
 
           
-     select, button{
-     display: flex;
-     background-color:rgb(9, 9, 90);
-     color:rgb(255, 255, 255);
-     border-radius: 10px; 
-     }
-    
-
-
+     
 
