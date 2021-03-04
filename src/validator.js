@@ -75,9 +75,7 @@ function luhnAlgorithm(numero){
 
 
 
-  //let result = Number(reverseNumber) 
-
-    // 22    -deberia retornar esto -> false o true
+  
   if (resultadoSuma%10===0){
      console.log('Valida');
      }else{ 

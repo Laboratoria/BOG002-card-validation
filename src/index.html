@@ -7,30 +7,37 @@
     <link link rel="preconnect" href="https://fonts.gstatic.com">
     </head>
   <body>
-    <header>
-    </header>
     <h1>La tienda para tu mascota</h1>
-    <form>
-     <div1> 
-      <img src="Logo.png" alt="LogoPetsArt">
-      <h2>Ingresa tus datos</h2>
-      <label for = "name" >   Nombre:  </label> <input type="text" required="" name="user_name">
-      <label for = "Tel"  >   Telefono:</label> <input type="tel" required="" >
-      <label for = "email">   E-mail:  </label> <input type="email" required="">
-      <label for = "numberCard">Numero de tarjeta: </label> <input type="number" required="" id="numeroDeTarjeta">
-      <b><button type='button' id='validate'>Validar</button></b>
-      <select name="Tarjeta" id="typecard">
-         <option>MasterCard</option>
-         <option>Dinners</option>
-         <option>Visa</option>
-         </select>
-     
-     </div1>
-    </form>
-    <div2><h2>Tu tarjeta es</h2>
-      <h2 id='result'></h2>
-     </div2>
+     <div class="container">
+        <section class="formulario" id="formulario">
+         <form>
+           <img src="IMG/Logo.png" alt="LogoPetsArt">
+           <h2>Ingresa tus datos</h2>
+           <label for = "name" >   Nombre:  </label> <input type="text" required="" name="user_name">
+           <label for = "Tel"  >   Telefono:</label> <input type="tel" required="" >
+           <label for = "email">   E-mail:  </label> <input type="email" required="">
+           <label for = "numberCard">Numero de tarjeta: </label> <input type="number" required="" id="numeroDeTarjeta">
+           <b><button type='button' id='validate'>Validar</button></b>
+           <select name="Tarjeta" id="typecard">
+           <option>MasterCard</option>
+           <option>Dinners</option>
+           <option>Visa</option>
+           </select> 
+         </form>
+       </section>
+       <section>
+         <div class='tarjeta' id='tarjeta'>
+          <div class="card">
+            <div class="MasterCard"></div>
+            <div class="chip"></div>
+            <div class ='meta'></div> 
+            <div class ='exp-date'></div>
+            <h2 id='result'></h2>
+           </div>
+          </div>
+       </section>
+     </div>
      <main></main>
      <footer></footer>
      <script src="index.js" type="module"></script>
-    </body>
+ </body>
