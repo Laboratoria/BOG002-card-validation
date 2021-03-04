@@ -13,7 +13,6 @@ function darClick(){
   console.log(creditCardNumber);
   
   let tarjetaEsValida = validator.luhnAlgorithm(creditCardNumber);
-  console.log('la tarjeta es valida ?  -> ', tarjetaEsValida);
 }
 
 

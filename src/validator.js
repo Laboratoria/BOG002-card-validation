@@ -67,7 +67,7 @@ function luhnAlgorithm(numero){
       
    
   }  
-  let resultadoFinal
+  let resultadoFinal=Boolean
   resultadoFinal =resultadoSuma%10;
 
   console.log('resultado suma -> ', resultadoSuma);
@@ -77,11 +77,15 @@ function luhnAlgorithm(numero){
 
   //let result = Number(reverseNumber) 
 
-  return resultadoSuma  // 22    -deberia retornar esto -> false o true
-  
-  
+    // 22    -deberia retornar esto -> false o true
+  if (resultadoSuma%10===0){
+     console.log('Valida');
+     }else{ 
+     console.log('Tarjeta no valida');
+   }
+  return resultadoSuma
 }
-  
+
 
 
 export default validator;
