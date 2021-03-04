@@ -1,77 +1,87 @@
-
 const validator = {
   luhnAlgorithm,
+
 };
 
-function invertirNumero (numero) {
-  let stringNumber = numero.toString( );//cadena de caracteres en formato numero (toString encadena)
-  let arrayNumber = stringNumber.split('');//array es un conjunto de datos en formato numero/split divide la cadena de caracteres
-  let reverseArrayNumber=arrayNumber.reverse();//aplicamos la funcion reverse a nuestro array
+
+function invertirNumero(numero){
+  let stringNumber = numero.toString();
+  
+  let arrayNumber = stringNumber.split('');
+
+  let reverseArray = arrayNumber.reverse();
+
   return reverseArray;
 }
 
 
 function luhnAlgorithm(numero){
+
   let reverseArrayNumber = invertirNumero(numero);
-  console.log("Reverse Array -->", reverseArrayNumber);
 
- }
+  console.log("Reverse Array --> ", reverseArrayNumber);
 
+  //let reverseNumber = reverseArrayNumber.join('');
+  //console.log("joinReverseNumber -->" , reverseNumber)
 
+  for (let i = 0; i <= reverseArrayNumber.length -1 ; i++) {
+      console.log("posicion --->", i , ' val ->' , reverseArrayNumber[i])
+      let validarnumeros = i%2; //residuo de la posicion dividido en 0 (0 par 1 impar)
+     
+      if(validarnumeros === 0 ){
+         
+         // console.log('la posicion : ', i , 'es PAR');
+         
+          let valor = reverseArrayNumber[i];
 
-  for (let i=0; i < reverseArrayNumber.length; i++) {//condicional, con variable de control
-   console.log('posicion-->',i, 'val->', reverseArrayNumber[i]);
+          let valorx2 = valor*2;
+              
+          if(valorx2 >= 10){
+              // se debe desglosar el numero y sumar
+              // console.log(valorx2)
+              let num1 = Number(valorx2.toString().split('')[0]);
+              let num2 = Number(valorx2.toString().split('')[1]);
 
-   let validarnumeros=i%2;//si el residuo es = a 0 es par, si el residuo es = a 1 es impar
+              console.log('num1 -> ', num1);
+              console.log('num2 -> ', num2);
+              
+              let sumaNume= num1 + num2;
 
-    if (validarnumeros===0){//si el residuo es = a 0 cumple la condicion if
-        console.log('la posicion:',i, 'es par');
-       let valor = reverseArrayNumber[i];//llamamos nuestro numero reversado, identificando sus posiciones 
-       let valorx2 = valor*2;// las que cumplen condición par se multiplican x2         
-      
-         if(valorx2>=10){//condicionamos, si el resultado es >= a diez
-           console.log (valorx2);//resultado de las multiplicaciones
-           let num1= Number (valorx2.toString().split('')[0]);//separamos valores del resultado con "split" 
-           let num2= Number (valorx2.toString().split('')[1]);
-           console.log('num1',num1);
-           console.log('num2',num2);
-           let sumaNum=num1+num2;//suma los digitos resultados de la multiplicación
-           reverseArrayNumber[i]=sumaNum;//llamamos nuestra cadena de caracteres reversada que cumple la condición
-       
-          }
-         else {reverseArrayNumber[i]=valorx2;
-           console.log=valorx2    
-            }
+              reverseArrayNumber[i] = sumaNume;
           
+          }else {
+              reverseArrayNumber[i] = valorx2;
+          }
+         
+      }
+      console.log("Posicion "+ i +" valor --> "+ reverseArrayNumber[i]);
 
+  }
+  console.log("Array con validacion de pares --> ", reverseArrayNumber);
+  //console.log("Array pos 2 -->" , arrayNumber[2] )
+
+  let resultadoSuma = 0;
+
+  for (let i = 0; i < reverseArrayNumber.length; i++){
+      resultadoSuma = resultadoSuma + Number(reverseArrayNumber[i]); // 6,5,6
       
-    }
-
-      console.log('posicion'+i+'valor->'+reverseArrayNumber[i]);
-  
- 
-  
-    }
-   console.log("array con validacion de pares->",reverseArrayNumber);
    
-   let resultadoSuma=0;
-   for (let i= 0; i < reverseArrayNumber.length; i++) {
-   resultadoSuma = resultadoSuma+ Number(reverseArrayNumber[i]);
-   }
-    
-   let ResultadoFinalTar
-    ResultadoFinalTar= resultadoSuma%10;
+  }  
+  let resultadoFinal
+  resultadoFinal =resultadoSuma%10;
 
-    if (validarnumeros===0){
-    console.log('tarjeta válida');
-    }
-    else
-    {
-      console.log ('tarjeta inválida');
-     }
-  
-  console.log(resultadoSuma)    
-  return''  
+  console.log('resultado suma -> ', resultadoSuma);
+  console.log('resultado Final -> ', resultadoFinal);
 
+
+
+  //let result = Number(reverseNumber) 
+
+  return resultadoSuma  // 22    -deberia retornar esto -> false o true
   
+  
+}
+  
+
+
 export default validator;
