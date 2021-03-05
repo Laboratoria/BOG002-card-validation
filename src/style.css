@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+
 body{
     margin: 0;
     }
@@ -104,15 +107,15 @@ body{
         left: 40 px;
      }
 
-     .card-number{
-        content: "1234 5678 9012";
+     .card-number::before{
+        content: "1234 5678 9012 4567";
         width: 100px;
         height: 100px;
         position: relative;
         top: 40px;
         left: 50px;
-        font-family:initial;
-        font-size: 21 px;
+        font-family:'Orbitron', sans-serif;
+        font-size:larger;
         letter-spacing: 5px;
         color:rgb(9, 9, 90);
         text-shadow: 1px 1px 8px;
@@ -123,7 +126,20 @@ body{
         width: 370px;
         justify-content: space-between;
      }
-     
+     .name::before{
+        content: "Evelyn Lorena";
+        width: 100px;
+        height: 1000px;
+        position: relative;
+        top: 60px;
+        left: 50px;
+        font-family: 'Handlee', cursive;
+        font-size: 25px;
+        letter-spacing: 3px;
+        color: rgba(255,255,255, 0.6);
+
+
+     }
      
 
      

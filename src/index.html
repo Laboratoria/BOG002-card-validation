@@ -28,6 +28,7 @@
             <div class="chip"></div>
             <div class="card-number"></div>
             <div class ="meta"></div> 
+            <div class = "name"></div>
             <div class ='exp-date'></div>
             <h2 id='result'></h2>
            </div>
@@ -37,4 +38,14 @@
      <main></main>
      <footer></footer>
      <script src="index.js" type="module"></script>
+     <script type="text/javascript" src="vanilla-tilt.js"></script>
+     <script type="text/javascript">
+       VanillaTilt.init(document.querySelector(".card"), {
+        max: 25,
+        speed: 400
+      });
+      
+    </script>
+</body>
  </body>
+</html>
