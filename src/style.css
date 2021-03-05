@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
 body{
     margin: 0;
     }
@@ -100,14 +102,14 @@ body{
         left: 40 px;
      }
 
-     .card-number{
+     .card-number::before{
         content: "1234 5678 9012";
         width: 100px;
         height: 100px;
         position: relative;
         top: 40px;
         left: 50px;
-        font-family:initial;
+        font-family: 'Orbitron', sans-serif;
         font-size: 21 px;
         letter-spacing: 5px;
         color:rgb(9, 9, 90);
