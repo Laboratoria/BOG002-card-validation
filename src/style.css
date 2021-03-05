@@ -107,8 +107,8 @@ body{
         left: 40 px;
      }
 
-     .card-number::before{
-        content: "1234 5678 9012 4567";
+     .card-number{
+        
         width: 100px;
         height: 100px;
         position: relative;
@@ -121,13 +121,10 @@ body{
         text-shadow: 1px 1px 8px;
 
      }
-     .meta{
-        display :flex;
-        width: 370px;
-        justify-content: space-between;
-     }
-     .name::before{
-        content: "Evelyn Lorena";
+     
+     .name{
+        
+        
         width: 100px;
         height: 1000px;
         position: relative;

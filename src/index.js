@@ -9,9 +9,14 @@ function darClick(){
   let creditCardNumber = document.getElementById('numeroDeTarjeta').value; // 123
   //console.log(IngresarNumeroTar);
   console.log(creditCardNumber);
+
+  let nombre = document.getElementById('nombre');
+
+  console.log(nombre)
   
   let tarjetaEsValida = validator.luhnAlgorithm(creditCardNumber);
 }
+
 
 
 

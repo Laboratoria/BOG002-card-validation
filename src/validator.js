@@ -87,5 +87,4 @@ function luhnAlgorithm(numero){
 }
 
 
-
 export default validator;
