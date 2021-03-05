@@ -78,10 +78,12 @@ function luhnAlgorithm(numero){
   
   if (resultadoSuma%10===0){
      console.log('Valida');
+     return true;
      }else{ 
      console.log('Tarjeta no valida');
+     return false;
    }
-  return resultadoSuma
+    return false;// si el usuario no ingresa un valor en este campo, se retornara un false.
 }
 
 

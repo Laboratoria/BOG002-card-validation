@@ -2,8 +2,6 @@ import validator from "./validator.js";
 
 //esta funcion contiene las variables para revesar nuestro valor
 
-//console.log('resultado-->', reverseCardNumber);
-
 let botonValidar=document.getElementById('validate');
 botonValidar.onclick= darClick;
 
