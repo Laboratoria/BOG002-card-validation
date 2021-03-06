@@ -42,7 +42,7 @@ body{
      text-align:left;
      font-weight:bolder;
      font-size:larger;
-     color:rgb(50, 61, 158);
+     color:#446a80;
      box-shadow: 2px 4px 15px 5px #000;
      font-family:'Handlee', cursive;  
      }
@@ -55,7 +55,7 @@ body{
         margin:5px 5px 5px 5px;
         width: 180px;
         font-size:larger;
-                 
+        text-align: center;
      } 
      select, button{
         display: flex;
@@ -64,6 +64,10 @@ body{
         border-radius: 10px; 
         font-family:'Handlee', cursive;  
         font-size: x-large;
+        width:100px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        
         }
        
      .card{
@@ -76,14 +80,15 @@ body{
      box-shadow: 4px 4px 4px black;
      cursor: pointer;
      font-family:'Handlee', cursive; 
-     margin:100px 100px 50px 100px; 
-      }
+     margin:100px 100px 50px 100px;
+     background:url(IMG/fondo\ tarjeta\ masterCard.png);
+     background-size: cover;
+     }
 
      .MasterCard{
      width: 80px;
      height: 80px;
-     background:url(IMG/logo-mastercard-4096.png)
-     no-repeat;
+     background:url(IMG/logo-mastercard-4096.png);
      filter: brightness(0.8);
      background-size: cover;
      position:relative;
@@ -94,28 +99,51 @@ body{
      .chip{
         width: 50px;
         height: 50px;
-        margin: 10px;
+        margin: 25px;
         background: url(IMG/chip-card.png);
         background-size: cover;
         position: relative;
-        top: 20px;
+        top: 0px;
         left: 40 px;
      }
 
-     .card-number::before{
-        content: "1234 5678 9012";
+     .card-number{
+        
         width: 100px;
         height: 100px;
         position: relative;
-        top: 40px;
-        left: 50px;
-        font-family: 'Orbitron', sans-serif;
-        font-size: 21 px;
+        top: 25px;
+        left: 30px;
+        font-family:'Orbitron', sans-serif;
+        font-size:25px;
         letter-spacing: 5px;
-        color:rgb(9, 9, 90);
-        text-shadow: 1px 1px 8px;
+        color:#9f842a;
+        text-shadow:2px 2px 2px  rgb(158, 109, 4);
+        }
 
+     .meta{
+        display:flex;
+        width: 370 px;
+        justify-content: space-between;
      }
+     
+     .name{
+        
+        
+        width: 100px;
+        height: 1000px;
+        position: relative;
+        top: 20px;
+        left: 30px;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 23px;
+        letter-spacing: 3px;
+        color:black;
+        text-shadow:2px 2px 2px blanchedalmond;
+        }
+     
+
+     
 
 
           

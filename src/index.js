@@ -2,8 +2,6 @@ import validator from "./validator.js";
 
 //esta funcion contiene las variables para revesar nuestro valor
 
-//console.log('resultado-->', reverseCardNumber);
-
 let botonValidar=document.getElementById('validate');
 botonValidar.onclick= darClick;
 
@@ -11,9 +9,14 @@ function darClick(){
   let creditCardNumber = document.getElementById('numeroDeTarjeta').value; // 123
   //console.log(IngresarNumeroTar);
   console.log(creditCardNumber);
+
+  let nombre = document.getElementById('nombre');
+
+  console.log(nombre)
   
   let tarjetaEsValida = validator.luhnAlgorithm(creditCardNumber);
 }
+
 
 
 
