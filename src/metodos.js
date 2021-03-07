@@ -13,8 +13,8 @@ function digitarNumeroTar(){
     var lblValue = document.getElementById("numTar");
     lblValue.innerText = repl;
 }
-
-
+    var input=  document.getElementById('numeroDeTarjeta');
+    input.addEventListener('input',function(){
+        (this.value = this.value.slice(0,16));
+   })
    
-   
-    

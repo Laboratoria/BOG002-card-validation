@@ -3,9 +3,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
 
 body{
-    margin: 0;
+    margin:10px;
+    background-color:rgb(255, 255, 255);
+     }
+
+    .page-nave{
+     border: 1px solid black;
+     display:inline;
+     padding: 10px 20px 5px 20px;
+     color:#384D59;
+     text-align:center;
+     margin: 30px 10px 30px 10 px;
+     border-radius:20px;
+     text-shadow:2px 2px 2px #C1D9D9;
+     font-family:'Baloo Tammudu 2', 'cursive';
+      }
+   
+   h1{ 
+      background-color:#384D59;
+      color:rgb(255, 255, 255);
+      font-family:'Handlee', cursive;  
+      text-align: center;
+      }
+   
+    h2{
+      display: flex;
+      background-color:rgb(255, 255, 255);
+      color:#384D59;
+      border-radius: 10px; 
+      font-family:'Handlee', cursive;  
+      font-size: x-large;
+      width:100px;
+      margin-left: 50%;
+      transform: translateX(-50%);
     }
 
+  .datos{
+      color:#384D59;
+      font-family:'Handlee', cursive;     
+      display: flex;
+   }
+
+   
+   .container1{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content:space-evenly;
+      align-items:flex-start;
+      background-image: url(IMG/fondo2.png);
+   }
+
+   .button-add{
+      transition-duration:0.4s;
+
+   }
+   .button-add:hover{
+      background-color: blue;
+      border: cornsilk;
+   }
+   
+   .producto{
+      margin:px;
+      padding: 2px 16px;
+   }
+
+   .producto:hover{
+      box-shadow: 0 8px 16px 0 black;
+      background-color:#A4BABF;
+    }
+
+   .producto img{
+      width: 300px;
+
+   }  
+       
    .container{
         width: 200vw;
         height: 200vh;
@@ -13,27 +84,16 @@ body{
         align-items:flex-start;
         background-image: url(IMG/fondo2.png);
       }
-       
-     h1{
-     background-color:#384D59 ;
-     display:block;
-     padding: 10px 20px 5px 20px;
-     color:rgb(255, 255, 255);
-     text-align: center;
-     margin: 30px 10px 30px 10 px;
-     border-radius:20px;
-     text-shadow:2px 2px 2px #C1D9D9;
-     font-family:'Baloo Tammudu 2', 'cursive';
-     }
-
-     img{
+    
+      
+    .logo img{
      width: 200px;
      margin:10px auto 10px;
      display: block; 
      
    }
 
-     .formulario{
+    .formulario{
      background-color:ivory;
      display: inline-block;
      padding: 50px;
@@ -57,7 +117,8 @@ body{
         font-size:larger;
         text-align: center;
      } 
-     select, button{
+
+     button{
         display: flex;
         background-color:#384D59;
         color:rgb(255, 255, 255);
@@ -127,9 +188,7 @@ body{
         justify-content: space-between;
      }
      
-     .name{
-        
-        
+     .name{ 
         width: 100px;
         height: 1000px;
         position: relative;
@@ -141,8 +200,8 @@ body{
         color:black;
         text-shadow:2px 2px 2px blanchedalmond;
         }
-     
 
+ 
      
 
 
