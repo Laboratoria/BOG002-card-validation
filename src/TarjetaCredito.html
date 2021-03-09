@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Valida tu tarjeta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css" />
+    <scrip src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></scrip>
+    <script src="https://kit.fontawesome.com/f125818f32.js" crossorigin="anonymous"></script>
+    </head>
+  <body>
+    <div class ="page-nav">
+    <h1>LA TIENDA PARA TU MASCOTA</h1>
+    </div> 
+      <div class="container">
+        <section class="formulario" id="formulario">
+         <form>
+          <img class="logo"src="IMG/Logo.png" alt="LogoPetsArt">
+           <h2 class="datos">Ingresa tus datos</h2>
+           <label for = "name" >   Nombre:  </label> <input type="text" id="user" name="user_name" onkeypress="digitarNombre()"required="">
+           <label for = "Tel"  >   Telefono:</label> <input type="tel" required="" >
+           <label for = "email">   E-mail:  </label> <input type="email" required="">
+           <label for = "numberCard">Numero de tarjeta: </label> <input type="number" id="numeroDeTarjeta" onkeypress="digitarNumeroTar()" />
+           <b><button type="button" class="buttonValidar" id='validate'>Validar</button></b>
+
+         </form>
+       </section>
+       <section>
+         <div class="tarjeta" id="tarjeta">
+          <div class="card">
+            <div class="MasterCard"></div>
+            <div class="chip"></div>
+            <label class="card-number" id="numTar" >0000 0000 0000 0000</label>
+            <div class="meta"></div>
+            <label class ="name" id="nombre">xxxxx xxxxxx xxxxx </label>
+            <h2 id='result'></h2>
+            </div>
+          </div>
+       </section>
+     </div>
+     <main></main>
+     <footer></footer>
+     <script src="index.js" type="module"></script>
+     <script type="text/javascript" src="vanilla-tilt.js"></script>
+     <script type="text/javascript" src="metodos.js"></script>
+     <script type="text/javascript" >
+       VanillaTilt.init(document.querySelector(".card"), {
+         max: 25,
+         speed: 400
+      });
+    </script>
+</body>
+ </body>
+</html>

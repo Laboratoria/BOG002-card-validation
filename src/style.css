@@ -3,39 +3,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
 
 body{
-    margin:10px;
+    margin:0px;
     background-color:rgb(255, 255, 255);
      }
 
     .page-nave{
-     border: 1px solid black;
-     display:inline;
-     padding: 10px 20px 5px 20px;
+     display:inline-flex;
+     padding: 0px 0px;
      color:#384D59;
-     text-align:center;
-     margin: 30px 10px 30px 10 px;
-     border-radius:20px;
+     margin: 0px 0 px;    
      text-shadow:2px 2px 2px #C1D9D9;
      font-family:'Baloo Tammudu 2', 'cursive';
       }
+
+    img.logo{
+    background: url(IMG/Logo.png); 
+    width: 200px;
+    height: 200px;
+    display:inline-block
+   }
+   
    
    h1{ 
       background-color:#384D59;
       color:rgb(255, 255, 255);
       font-family:'Handlee', cursive;  
-      text-align: center;
+      font-size: xx-large;
+      margin: 0px 0px;
+      display:inline-block;
       }
    
     h2{
-      display: flex;
+      display:block ;
       background-color:rgb(255, 255, 255);
       color:#384D59;
       border-radius: 10px; 
       font-family:'Handlee', cursive;  
-      font-size: x-large;
-      width:100px;
-      margin-left: 50%;
-      transform: translateX(-50%);
+      text-align: center;
+      margin: 10px 0px;
+    }
+
+    h3{
+      display:inline-flex;
+      background-color:rgb(255, 255, 255);
+      color:#384D59;
+      border-radius: 10px; 
+      font-family:'Handlee', cursive;  
+      text-align:left;
+      margin: 0px 40px;
     }
 
   .datos{
@@ -46,24 +61,36 @@ body{
 
    
    .container1{
-      display: flex;
+      display:flex;
       flex-wrap: wrap;
       justify-content:space-evenly;
       align-items:flex-start;
       background-image: url(IMG/fondo2.png);
+      
    }
 
-   .button-add{
+   .button-comprar{
       transition-duration:0.4s;
-
+      display: inline-flex;
+      margin: 10 px 0px;
+      background-color:#384D59;
+      color:rgb(255, 255, 255);
+      border-radius: 10px; 
+      font-family:'Handlee', cursive;  
+      left: 80px;
+      font-size:large;
+        
+        
    }
-   .button-add:hover{
-      background-color: blue;
-      border: cornsilk;
+   
+   .button-comprar:hover{
+   background-color: blue;
+   border: cornsilk;
+     
    }
    
    .producto{
-      margin:px;
+      margin:50px;
       padding: 2px 16px;
    }
 
@@ -81,18 +108,11 @@ body{
         width: 200vw;
         height: 200vh;
         display: flex ;
-        align-items:flex-start;
+        align-items:flex-start;  
         background-image: url(IMG/fondo2.png);
       }
     
       
-    .logo img{
-     width: 200px;
-     margin:10px auto 10px;
-     display: block; 
-     
-   }
-
     .formulario{
      background-color:ivory;
      display: inline-block;
@@ -118,7 +138,7 @@ body{
         text-align: center;
      } 
 
-     button{
+    .buttonValidar{
         display: flex;
         background-color:#384D59;
         color:rgb(255, 255, 255);
