@@ -1,13 +1,12 @@
 const validator = {
-  luhnAlgorithm,
+  isValid,
 
 };
 
 
 function invertirNumero(numero){
-  let stringNumber = numero.toString();
   
-  let arrayNumber = stringNumber.split('');
+  let arrayNumber = numero.split('');
 
   let reverseArray = arrayNumber.reverse();
 
@@ -15,7 +14,7 @@ function invertirNumero(numero){
 }
 
 
-function luhnAlgorithm(numero){
+function isValid(numero){
 
   let reverseArrayNumber = invertirNumero(numero);
 
@@ -85,8 +84,11 @@ function luhnAlgorithm(numero){
      alert("Tarjeta invalida, vuelva a intentarlo")
      return false;
    }
-    return false;// si el usuario no ingresa un valor en este campo, se retornara un false.
-}
+  
+  }
+  
+  
+
 
 
 export default validator;

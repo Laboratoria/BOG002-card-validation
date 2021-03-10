@@ -8,19 +8,20 @@
     <scrip src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></scrip>
     <script src="https://kit.fontawesome.com/f125818f32.js" crossorigin="anonymous"></script>
     </head>
-  <body>
+    <body>
     <div class ="page-nav">
     <h1>LA TIENDA PARA TU MASCOTA</h1>
     </div> 
       <div class="container">
         <section class="formulario" id="formulario">
-         <form>
-          <img class="logo"src="IMG/Logo.png" alt="LogoPetsArt">
+         <form action="r" method="post" class="form-register" onsubmit="return datos();">
+          <img class="logo"src="IMG/Logo.png" alt="LogoPetsArt" width="300px">
            <h2 class="datos">Ingresa tus datos</h2>
-           <label for = "name" >   Nombre:  </label> <input type="text" id="user" name="user_name" onkeypress="digitarNombre()"required="">
-           <label for = "Tel"  >   Telefono:</label> <input type="tel" required="" >
-           <label for = "email">   E-mail:  </label> <input type="email" required="">
-           <label for = "numberCard">Numero de tarjeta: </label> <input type="number" id="numeroDeTarjeta" onkeypress="digitarNumeroTar()" />
+           <label for = "name" >   Nombre:  </label> <input type="text" id="user" required="">
+           <label for = "Tel"  >   Telefono:</label> <input type="tel"  id="telefono" minlength="7" maxlength="10" required="">
+           <label for = "email">   E-mail:  </label> <input type="email" id="email"required="" >
+           <label for = "numberCard">Numero de tarjeta: </label> <input type="text" id="numeroDeTarjeta" minlength="16" maxlength="16"/>
+           <input type="submit" value="Registrar" class="btn-enviar">
            <b><button type="button" class="buttonValidar" id='validate'>Validar</button></b>
 
          </form>

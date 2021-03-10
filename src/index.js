@@ -1,3 +1,5 @@
+
+
 import validator from "./validator.js";
 
 //esta funcion contiene las variables para revesar nuestro valor
@@ -14,10 +16,12 @@ function darClick(){
 
   console.log(nombre)
   
-  let tarjetaEsValida = validator.luhnAlgorithm(creditCardNumber);
+  let tarjetaEsValida = validator.isValid(creditCardNumber)
+   
+
+
+  
 }
-
-
 
 
  
