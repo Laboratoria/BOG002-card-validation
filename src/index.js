@@ -1,28 +1,19 @@
 
-
 import validator from "./validator.js";
+//import * as validator from "./validator.js";
 
 //esta funcion contiene las variables para revesar nuestro valor
+//alert('prueba call')
 
-function datos(){
-  var user,telefono,email,numeroDeTarjeta;
-   user = document.getElementById("user").value;
-   telefono = document.getElementById("telefono").value;
-   email = document.getElementById("email").value;
-   numeroDeTarjeta = document.getElementById("numeroDeTarjeta").value;
-   expresion = /^[0-9]{0,16}$/;
+let numeroDeTarjeta =document.getElementById("numeroDeTarjeta");
+numeroDeTarjeta.addEventListener("keyup", restringirTarjeta)
+function restringirTarjeta(){
+numeroDeTarjeta.value = numeroDeTarjeta.value.replace(/\D/g, '');
 
-   if (user==="" || telefono ==="" || email ==="" || numeroDeTarjeta ===""){
-    alert("Debes ingresar todos los datos")
-    return false;
-    
-   }
+}
+console.log(numeroDeTarjeta);
 
-   if (!expresion.test(numeroDeTarjeta)){
-     alert("Ingrese el número de su tarjeta")
-   return false;
-   }
-  }
+
 
 let botonValidar=document.getElementById('validate');
 botonValidar.onclick= darClick;
@@ -55,7 +46,4 @@ function digitarNombre(){
     lblValue.innerText = repl;
   }
 
-
-
- 
- 
+  
