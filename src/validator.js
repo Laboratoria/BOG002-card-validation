@@ -25,9 +25,9 @@ function invertirNumero(numero){//esta funcion invierte el numero ingresado
 
 
 
-function isValid(number){// la función isValid, hace referencia al algoritmo de Luhn. Trae las condiones que nos permite validar el algoritmo.
+function isValid(numero){// la función isValid, hace referencia al algoritmo de Luhn. Trae las condiones que nos permite validar el algoritmo.
 
-  let reverseArrayNumber = invertirNumero(number);// esta variable nos permite traer el nuestros numeros invertidos
+  let reverseArrayNumber = invertirNumero(numero);// esta variable nos permite traer el nuestros numeros invertidos
 
   for (let i = 0 ; i <= reverseArrayNumber.length -1 ; i++) { //Se crea un for para tomar cada valor de nuestra array
     
@@ -46,8 +46,8 @@ function isValid(number){// la función isValid, hace referencia al algoritmo de
         let num2 = Number(valorx2.toString().split('')[1]);//num 2
 
               
-        let sumaNume= num1 + num2; // resultado de los numeros desglozados
-        reverseArrayNumber[i] = sumaNume; // llos resultados de la suma se posicionan en la reverseArrayNumber
+        let sumaNumeros= num1 + num2; // resultado de los numeros desglozados
+        reverseArrayNumber[i] = sumaNumeros; // llos resultados de la suma se posicionan en la reverseArrayNumber
           
       }else {
         reverseArrayNumber[i] = valorx2; // las multiplicaciones menores de 10, se quedan fijos en la reverseArrayNumber
@@ -67,6 +67,7 @@ function isValid(number){// la función isValid, hace referencia al algoritmo de
   let resultadoFinal=resultadoSuma%10; // la variable resultado final, guarda el resultado de la suma total obtenida y se realiza una dvisión sintetica para obtener el multiplo de 10
 
   if (resultadoFinal%10===0){//Si cumple la condición el resultado será true
+    //arlert("Tu tarjeta es valida")
    console.log(true);
    return true;
    
@@ -76,6 +77,7 @@ function isValid(number){// la función isValid, hace referencia al algoritmo de
   else{ 
     // si no cumple la condición será flase
     console.log(false)
+    //alert ("Tarjeta no valida, vuelve a intentarlo")
     return false;
   }
    
@@ -84,5 +86,6 @@ function isValid(number){// la función isValid, hace referencia al algoritmo de
 
 
 }
+
 export default validator;
 
