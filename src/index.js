@@ -7,9 +7,27 @@ botonValidar.onsubmit= darClick;//le damos el evento 'onnclick' a esta variable 
 
 function darClick(){//esta función se activa con el evento 'onclick' toma el valor y lo procesa en la función isValid
   let numeroDeTarjeta= document.getElementById('idNumeroIngresado').value; //con esta variable llamamos  el valor ingresado en el id 'numeroDeTarjeta'
-  let tarjetaValida = validator.isValid(numeroDeTarjeta);//la variable tarjetaesvalida se crea para guiar el valor a la carpeta validator. y ejecutar la funcion isValid(algoritmo de Luhn) 
+  numeroDeTarjeta = validator.isValid(numeroDeTarjeta);//la variable tarjetaesvalida se crea para guiar el valor a la carpeta validator. y ejecutar la funcion isValid(algoritmo de Luhn) 
+ //tarjetaValida=document.getElementById(validator.isValid)
+ 
+ if(numeroDeTarjeta===true){
+  document.getElementById("result").innerHTML='Compra exitosa';
+ // console.log('Valida');
+  }
+ else{
+  document.getElementById("result").innerHTML='Tarjeta Invalida';
+ //   console.log('Invalida');
+ }  
 }
 
+function resultado(){
+  let numeroDeTarjeta= document.getElementById('idNumeroIngresado').value; //con esta variable llamamos  el valor ingresado en el id 'numeroDeTarjeta'
+  numeroDeTarjeta = validator.isValid(numeroDeTarjeta);//la variable tarjetaesvalida se crea
+
+
+
+
+}
 
 
 
@@ -38,8 +56,6 @@ function digitarNumeroTar(){//se crea esta función que permite reflejar el valo
   let labelingresarNumeroTar = document.getElementById("idNumeroTarjeta");//esta variable llama el ID 'numTar' para ingresarlo en el label
   labelingresarNumeroTar.innerText = reemplazar;//este label imprime el valor guardado en el ID'numTar' y da el formato de la expresion regular
 }
-
-
 
 
 

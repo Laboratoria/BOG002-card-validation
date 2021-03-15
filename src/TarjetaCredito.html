@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Valida tu tarjeta</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" href="style.css" />
+    <title>Valida tu tarjeta</title>
     <scrip src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></scrip>
     <script src="https://kit.fontawesome.com/f125818f32.js" crossorigin="anonymous"></script>
-    </head>
+  </head>
     <body>
       <header>
-        <div class="wrapper"> 
+        <div class="wrapper">
+          <div class = "titulo">
+            <img src="IMG/Gidget Pets GIF - Gidget Pets SecretLifeOfPets - Discover & Share GIFs.gif" alt="portada" class="portada"> 
+           
+            <h1>La tienda para tu mascota</h1>
+          </div> 
           <nav>
             <a href="#">Inicio</a>
            <a href="#">Servicios</a>
@@ -20,7 +28,7 @@
      </header>
       <div class="container">
         <section class="formulario" id="formulario">
-         <form onsubmit="return isValid();" id = validar>
+         <form onsubmit=return (tarjetaValida); id = validar>
             <img class="logo"src="IMG/Logo.png" alt="LogoPetsArt" width="300px">
             <h2 class="datos">Ingresa tus datos</h2>
             <label for = "name" >   Nombre:  </label> <input type="text" id="usuario" required/>
@@ -38,13 +46,21 @@
             <label class="card-number" id="idNumeroTarjeta">0000 0000 0000 0000</label>
             <div class="meta"></div>
             <label class ="name" id="idNombreTarjeta">xxxxx xxxxxx xxxxx </label>
-            <h2 id='result'></h2>
             </div>
           </div>
        </section>
+       <div>
+         <h2 id='result'></h2>
+       </div>
      </div>
      <main></main>
-     <footer></footer>
+    <footer>
+     <div class="redesSociales">
+     <a href="https://www.facebook.com/Happypetsart" class="facebook"><i class="fa fa-facebook"></i></a>
+     <a href="https://www.instagram.com/happy_petsart/"class="instagram"><i class="fa fa-instagram"></i></a>
+     <a href="https://wa.me/message/A3MUGSP3LOHXF1"class="whatsapp"><i class="fab fa-whatsapp-square"></i></a>
+     </div>
+    </footer>
      <script src="index.js" type="module"></script>
      <script type="text/javascript" src="vanilla-tilt.js"></script>
      <script type="text/javascript" >
@@ -54,5 +70,4 @@
       });
     </script>
 </body>
- </body>
 </html>
