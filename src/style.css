@@ -37,7 +37,7 @@ header .logo {
 
 header nav{
  float: right;
-line-height:200px; 
+line-height:140px; 
         
 }
 header nav a{
@@ -46,12 +46,12 @@ header nav a{
  text-decoration: none;
  padding: 10px 20px;
  line-height: normal;
- font-size: 20px;
+ font-size: 30px;
  font-weight: bolder;
  -webkit-transition: all 500ms ease;
  -o-transition:all 500ms ease;
  transition: all 500ms ease;
-
+ font-family:'Handlee', cursive; 
 }
    
 header nav a:hover{
@@ -68,17 +68,20 @@ header nav a:hover{
  border-radius:20px;
  text-shadow:2px 2px 2px #C1D9D9;
  font-family:'Baloo Tammudu 2', 'cursive';
+ 
 }
 
   
 h1 { 
+ text-align: center;
  color:rgb(255, 255, 255);
  font-family:'Handlee', cursive;  
- font-size: xx-large;
+ font-size: 35px;
  padding: 20px 70px 0px 0px;
  margin-left:400px;
  display:flex; 
- }
+ margin-top: 20px;
+}
 
 
 .portada{
@@ -119,6 +122,7 @@ h3{
  align-items:flex-start;
  background-image: url(IMG/fondo2.png);
  
+ 
       
 }
 
@@ -133,13 +137,14 @@ h3{
    font-family:'Handlee', cursive;  
    left: 80px;
    font-size:large;  
-        
+   text-decoration: none;
         
 }
-   
+
 .button-comprar:hover{
    background-color: blue;
    border: cornsilk;
+   
      
 }
    
@@ -156,6 +161,7 @@ h3{
 .producto img{
   width: 300px;
   border-radius: 20px;
+  text-decoration: none;
 
   
 }  
@@ -259,12 +265,12 @@ form input{
    text-shadow:2px 2px 2px  rgb(20, 14, 0);
 }
 
-/* .meta{
+.meta{
    display:flex;
    width: 370 px;
    justify-content: space-between;
 }
-      */
+
 .name{ 
    width: 100px;
    height: 1000px;
@@ -287,7 +293,7 @@ footer .redesSociales{
    background-color:rgb(21, 15, 44) ;
    display:flex;
    flex-direction: row;
-   justify-content: space-between;
+   justify-content:left;
    flex-wrap: wrap;
   
    padding: 10px 5px;

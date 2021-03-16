@@ -3,31 +3,56 @@ import validator from "./validator.js";
 
 
 let botonValidar=document.getElementById('validar');//esta variable llama el id 'validate' de nuestro html
-botonValidar.onsubmit= darClick;//le damos el evento 'onnclick' a esta variable para que ejecute la función 'darClick'
+botonValidar.onsubmit = darClick;//le damos el evento 'onnclick' a esta variable para que ejecute la función 'darClick'
 
 function darClick(){//esta función se activa con el evento 'onclick' toma el valor y lo procesa en la función isValid
   let numeroDeTarjeta= document.getElementById('idNumeroIngresado').value; //con esta variable llamamos  el valor ingresado en el id 'numeroDeTarjeta'
-  numeroDeTarjeta = validator.isValid(numeroDeTarjeta);//la variable tarjetaesvalida se crea para guiar el valor a la carpeta validator. y ejecutar la funcion isValid(algoritmo de Luhn) 
- //tarjetaValida=document.getElementById(validator.isValid)
- 
- if(numeroDeTarjeta===true){
-  document.getElementById("result").innerHTML='Compra exitosa';
- // console.log('Valida');
+  numeroDeTarjeta = validator.isValid(numeroDeTarjeta);
+  mostrarValidacion(numeroDeTarjeta);
+  //la variable tarjetaesvalida se crea para guiar el valor a la carpeta validator. y ejecutar la funcion isValid(algoritmo de Luhn) 
+}
+
+function mostrarValidacion(numeroDeTarjeta){
+   let respuesta=document.getElementById('formulario');
+   let resultadoValidacion= numeroDeTarjeta;
+   let nombreUsuario = document.getElementById("usuario").value;
+  if (resultadoValidacion === 'true'){
+    resultadoValidacion = 'valida';
+  }else{
+    resultadoValidacion='invalida';
+  
   }
- else{
-  document.getElementById("result").innerHTML='Tarjeta Invalida';
- //   console.log('Invalida');
- }  
+  respuesta.innerHTML =' hola ' + nombreUsuario + ' tu tarjeta es '+ resultadoValidacion;
 }
 
-function resultado(){
-  let numeroDeTarjeta= document.getElementById('idNumeroIngresado').value; //con esta variable llamamos  el valor ingresado en el id 'numeroDeTarjeta'
-  numeroDeTarjeta = validator.isValid(numeroDeTarjeta);//la variable tarjetaesvalida se crea
+// numeroDeTarjeta.preventDefault();
+  // document.forms['formulario'].addEventListener('submit',respuesta)
+  // function respuesta(numeroDeTarjeta){
+  //   numeroDeTarjeta.preventDefault();
+    
+
+  //tarjetaValida=document.getElementById(validator.isValid)
+ 
+//  if(numeroDeTarjeta===true){
+//  // document.getElementById('resultado2').innerHTML='Compra exitosa';
+//  // console.log('Valida');
+//   alert ("Compra Exitosa");
+//   }
+//  else{
+//   //document.getElementById('resultado2').innerHTML='Tarjeta Invalida';
+//  //   console.log('Invalida');
+//  alert("ingresa nuevamente, tu número es invalido");
+//  }  
+// }
+// document.forms('formulario').addEventListener('onsubmit',resultado); //con esta variable llamamos  el valor ingresado en el id 'numeroDeTarjeta'
+// function resultado(numeroDeTarjeta){
+//   numeroDeTarjeta.preventDefault();
+//   numeroDeTarjeta = validator.isValid(numeroDeTarjeta);//la variable tarjetaesvalida se crea
 
 
 
 
-}
+// }
 
 
 
@@ -56,7 +81,5 @@ function digitarNumeroTar(){//se crea esta función que permite reflejar el valo
   let labelingresarNumeroTar = document.getElementById("idNumeroTarjeta");//esta variable llama el ID 'numTar' para ingresarlo en el label
   labelingresarNumeroTar.innerText = reemplazar;//este label imprime el valor guardado en el ID'numTar' y da el formato de la expresion regular
 }
-
-
 
 

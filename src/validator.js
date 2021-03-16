@@ -67,15 +67,17 @@ function isValid(number){// la función isValid, hace referencia al algoritmo de
   let resultadoFinal=resultadoSuma%10; // la variable resultado final, guarda el resultado de la suma total obtenida y se realiza una dvisión sintetica para obtener el multiplo de 10
 
   if (resultadoFinal%10===0){//Si cumple la condición el resultado será true
-  //  console.log(true);
-  //  document.getElementById("result").innerHTML='Compra exitosa';
+   //  console.log(true);
+   //  document.getElementById("result").innerHTML='Compra exitosa';
+    alert("compra exitosa!");
    return true;
-   }
+  }
   else{ 
     // si no cumple la condición será flase
     // document.getElementById("result").innerHTML='Compra exitosa';
     // console.log(false)
-  return false;
+   alert("Tarjeta invalida, verifica el número");
+   return false;
   }
    
   
