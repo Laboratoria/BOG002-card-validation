@@ -19,13 +19,13 @@ Los productos van dirigidos a propietarios de mascotas que deseen brindarle como
 
 ## 2.3 Primer prototipo en papel.
 
-<img src = "IMG/Read.Me/PROTOTIPO INICIAL.png">
+<img src = "IMG/Read.Me/Lapizypapel.png">
 <img src = "IMG/Read.Me/Prototipo.png">
 
 ## 2.4 Feedback recibido.
--Tener en cuenta la colorimetria para los botones y el formulario de ingreso de datos.
--Letra legible y visible, tanto en formulario de ingreso de datos como en la parte de la tarjeta.
--Distribución de espacios en la pagina web y en los botones.
+*Tener en cuenta la colorimetria para los botones y el formulario de ingreso de datos.
+*Letra legible y visible, tanto en formulario de ingreso de datos como en la parte de la tarjeta.
+*Distribución de espacios en la pagina web y en los botones.
 
 ## 2.5  Prototipo final.
 
@@ -75,4 +75,3 @@ El proyecto fue elaborado con las herramientas HTML,JavaScript y CSS
 # 5. Autores
 Paula Lorena Ruiz
 Evelyn Paola Botia
-
