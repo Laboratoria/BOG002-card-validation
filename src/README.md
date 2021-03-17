@@ -19,13 +19,13 @@ Los productos van dirigidos a propietarios de mascotas que deseen brindarle como
 
 ## 2.3 Primer prototipo en papel.
 
-<img src = "IMG/Read.Me/Lapizypapel.png">
+<img src = "IMG/Read.Me/Lapizypapel.jpg">
 <img src = "IMG/Read.Me/Prototipo.png">
 
 ## 2.4 Feedback recibido.
-*Tener en cuenta la colorimetria para los botones y el formulario de ingreso de datos.
-*Letra legible y visible, tanto en formulario de ingreso de datos como en la parte de la tarjeta.
-*Distribución de espacios en la pagina web y en los botones.
+* Tener en cuenta la colorimetria para los botones y el formulario de ingreso de datos.
+* Letra legible y visible, tanto en formulario de ingreso de datos como en la parte de la tarjeta.
+* Distribución de espacios en la pagina web y en los botones.
 
 ## 2.5  Prototipo final.
 
@@ -36,42 +36,42 @@ Los productos van dirigidos a propietarios de mascotas que deseen brindarle como
 # 3. OBJETIVOS DE APRENDIZAJE
 
 ## HTML y CSS
-[x ] Uso de HTML semántico.
-[x ] Uso de selectores de CSS.
-[x ] Construir tu aplicación respetando el diseño realizado (maquetación).
+* [x ] Uso de HTML semántico.
+* [x ] Uso de selectores de CSS.
+* [x ] Construir tu aplicación respetando el diseño realizado (maquetación).
 
 ## DOM
-[x ] Uso de selectores del DOM.
-[x ] Manejo de eventos del DOM.
-[x ] Manipulación dinámica del DOM. (appendChild |createElement | createTextNode| innerHTML | textContent | etc.)
+* [x ] Uso de selectores del DOM.
+* [x ] Manejo de eventos del DOM.
+* [x ] Manipulación dinámica del DOM. (appendChild |createElement | createTextNode| innerHTML | textContent | etc.)
 
 ## JavaScript
-[x ] Manipulación de strings.
-[x ] Uso de condicionales (if-else | switch | operador ternario)
-[x ] Uso de bucles (for | for..in | for..of | while)
-[x ] Uso de funciones (parámetros | argumentos | valor de retorno)
-[x ] Declaración correcta de variables (const & let)
+* [x ] Manipulación de strings.
+* [x ] Uso de condicionales (if-else | switch | operador ternario)
+* [x ] Uso de bucles (for | for..in | for..of | while)
+* [x ] Uso de funciones (parámetros | argumentos | valor de retorno)
+* [x ] Declaración correcta de variables (const & let)
 
 ## Testing
-[x ] Testeo unitario.
+* [x ] Testeo unitario.
 
 ## Estructura del código y guía de estilo
-[x ] Organizar y dividir el código en módulos (Modularización)
-[x ] Uso de identificadores descriptivos (Nomenclatura | Semántica)
-[x ] Uso de linter (ESLINT)
+* [x ] Organizar y dividir el código en módulos (Modularización)
+* [x ] Uso de identificadores descriptivos (Nomenclatura | Semántica)
+* [x ] Uso de linter (ESLINT)
 ## Git y GitHub
-[x ] Uso de comandos de git (add | commit | pull | status | push)
-[x ] Manejo de repositorios de GitHub (clone | fork | gh-pages)
+* [x ] Uso de comandos de git (add | commit | pull | status | push)
+* [x ] Manejo de repositorios de GitHub (clone | fork | gh-pages)
 
 ## UX
-[x ] Diseñar la aplicación pensando y entendiendo al usuario.
-[x ] Crear prototipos para obtener feedback e iterar.
-[x ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
+* [x ] Diseñar la aplicación pensando y entendiendo al usuario.
+* [x ] Crear prototipos para obtener feedback e iterar.
+* [x ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
 
 # 4. Herramientas de elaboración del proyecto
 El proyecto fue elaborado con las herramientas HTML,JavaScript y CSS
 
 
 # 5. Autores
-Paula Lorena Ruiz
-Evelyn Paola Botia
+* Paula Lorena Ruiz
+* Evelyn Paola Botia
