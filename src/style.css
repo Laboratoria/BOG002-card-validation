@@ -37,7 +37,7 @@ header .logo {
 
 header nav{
  float: right;
-line-height:140px; 
+ line-height:140px; 
         
 }
 header nav a{
@@ -68,7 +68,7 @@ header nav a:hover{
  border-radius:20px;
  text-shadow:2px 2px 2px #C1D9D9;
  font-family:'Baloo Tammudu 2', 'cursive';
- 
+
 }
 
   
