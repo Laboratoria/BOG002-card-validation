@@ -12,48 +12,6 @@ function darClick(){//esta función se activa con el evento 'onclick' toma el va
   //la variable tarjetaesvalida se crea para guiar el valor a la carpeta validator. y ejecutar la funcion isValid(algoritmo de Luhn) 
 }
 
-function mostrarValidacion(numeroDeTarjeta){
-   let respuesta=document.getElementById('formulario');
-   let resultadoValidacion= numeroDeTarjeta;
-   let nombreUsuario = document.getElementById("usuario").value;
-  if (resultadoValidacion === 'true'){
-    resultadoValidacion = 'valida';
-  }else{
-    resultadoValidacion='invalida';
-  
-  }
-  respuesta.innerHTML =' hola ' + nombreUsuario + ' tu tarjeta es '+ resultadoValidacion;
-}
-
-// numeroDeTarjeta.preventDefault();
-  // document.forms['formulario'].addEventListener('submit',respuesta)
-  // function respuesta(numeroDeTarjeta){
-  //   numeroDeTarjeta.preventDefault();
-    
-
-  //tarjetaValida=document.getElementById(validator.isValid)
- 
-//  if(numeroDeTarjeta===true){
-//  // document.getElementById('resultado2').innerHTML='Compra exitosa';
-//  // console.log('Valida');
-//   alert ("Compra Exitosa");
-//   }
-//  else{
-//   //document.getElementById('resultado2').innerHTML='Tarjeta Invalida';
-//  //   console.log('Invalida');
-//  alert("ingresa nuevamente, tu número es invalido");
-//  }  
-// }
-// document.forms('formulario').addEventListener('onsubmit',resultado); //con esta variable llamamos  el valor ingresado en el id 'numeroDeTarjeta'
-// function resultado(numeroDeTarjeta){
-//   numeroDeTarjeta.preventDefault();
-//   numeroDeTarjeta = validator.isValid(numeroDeTarjeta);//la variable tarjetaesvalida se crea
-
-
-
-
-// }
-
 
 
 document.getElementById("usuario").addEventListener("keyup",digitarNombre); //Llamamos el id'user' del html y le asignamos un evento 'keyup' 
@@ -68,7 +26,7 @@ function digitarNombre(){//se crea esta función que permite reflejar el valor e
 let ingresoNumeroForm =document.getElementById("idNumeroIngresado");// creamos una variable para llamar el valor del id de numeroDeTarjeta.
 idNumeroIngresado.addEventListener("keyup", restringirTarjeta)// traemos el valor llamado para que cumpla la funcion restringirTarjeta cuando se ejecute  el evento onkey
 function restringirTarjeta(){//estta función toma el valor y valida su formato por una expresion regular
-idNumeroIngresado.value = ingresoNumeroForm.value.replace(/\D/g, '');//esta expresión no permite ingresar letras ni expresiones (#$/+) 
+ idNumeroIngresado.value = ingresoNumeroForm.value.replace(/\D/g, '');//esta expresión no permite ingresar letras ni expresiones (#$/+) 
 
 }
 

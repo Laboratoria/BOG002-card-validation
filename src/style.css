@@ -29,7 +29,7 @@ header .logo {
  
 }
 
-.img{
+.logo{
    width: 200px;
    
 }
@@ -166,13 +166,8 @@ h3{
   
 }  
        
-.container{
-   width: 200vw;
-   height: 200vh;
-   display: flex ;
-   align-items:flex-start;  
-   background-image: url(IMG/fondo2.png);
-}
+
+
     
       
 .formulario{
