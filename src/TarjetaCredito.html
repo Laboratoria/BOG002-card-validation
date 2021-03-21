@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="style.css" />
+    <title>Valida tu tarjeta</title>
+    <scrip src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></scrip>
+    <script src="https://kit.fontawesome.com/f125818f32.js" crossorigin="anonymous"></script>
+  </head>
+    <body>
+      <header>
+        <div class="wrapper">
+          <div class = "titulo">
+            <img src="IMG/Gidget Pets GIF - Gidget Pets SecretLifeOfPets - Discover & Share GIFs.gif" alt="portada" class="portada"> 
+            
+            <h1>Happy Pets Art <br> La tienda para tu mascota</h1>
+            
+          </div> 
+          <nav>
+            <a href="#">Inicio</a>
+           <a href="#">Servicios</a>
+           <a href="#">Contáctanos</a>
+          </nav>
+        </div>
+     </header>
+      <div class="container1">
+        <section class="formulario" id="formulario">
+         <form onsubmit= "return numeroDeTarjeta"; id = "validar">
+            <img class="logo"src="IMG/Logo.png" alt="LogoPetsArt" >
+            <h2 class="datos">Ingresa tus datos</h2>
+            <label for = "name" >   Nombre:  </label> <input type="text" id="usuario" required/>
+            <label for = "Tel"  >   Telefono:</label> <input type="tel"  id="telefono" minlength="7" maxlength="10" required/>
+            <label for = "email">   E-mail:  </label> <input type="email" id="email" required />
+            <label for = "numberCard">Numero de tarjeta: </label> <input type="text" id="idNumeroIngresado"  maxlength="16" required/>
+            <input type="submit" class="buttonValidar" id='validate' value="Validar">
+         </form>
+       </section>
+       <section>
+         <div class="tarjeta" id="tarjeta">
+          <div class="card">
+            <div class="MasterCard"></div>
+            <div class="chip"></div>
+            <label class="card-number" id="idNumeroTarjeta">0000 0000 0000 0000</label>
+            <div class="meta"></div>
+            <label class ="name" id="idNombreTarjeta">xxxxx xxxxxx xxxxx </label>
+            </div>
+          </div>
+       </section>
+       <div>
+         <h2 id='resultado2'></h2>
+       </div>
+     </div>
+     <main></main>
+     <footer>
+      <div class="redesSociales">
+         <a href="https://www.facebook.com/Happypetsart" class="facebook"><img src="IMG/facebookLogo.png" width="30px"> 
+         <a href="https://www.instagram.com/happy_petsart/"class="instagram"><img src="IMG/InstagramIcono.png" width="30px"> 
+         <a href="https://wa.me/message/A3MUGSP3LOHXF1"class="whatsapp"><img src="IMG/whatsappIcono.png" width="30px"> 
+      </div>
+    </footer>
+     <script src="index.js" type="module"></script>
+     <script type="text/javascript" src="vanilla-tilt.js"></script>
+     <script type="text/javascript" >
+    VanillaTilt.init(document.querySelector(".card"), {
+         max: 25,
+         speed: 400
+      });
+    </script>
+</body>
+</html>

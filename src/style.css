@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+*{margin:0; padding: 0;}
+body{
+  
+   background-color:rgb(255, 255, 255);
+}
+
+header{
+ width: 100%;
+ overflow: hidden;
+ background:#4f7388;
+ margin-bottom: 20px;
+}
+
+.wrapper{
+ width: 90%;
+ max-width: 1000px;
+ margin: auto;
+ overflow: hidden;
+
+}
+header .logo {
+ color: #f2f2f2;
+ font-size: 30px;
+ line-height: 30px;
+ float: left;
+ 
+}
+
+.logo{
+   width: 200px;
+   
+}
+
+
+header nav{
+ float: right;
+ line-height:140px; 
+        
+}
+header nav a{
+ display: inline-block;
+ color: #fff;
+ text-decoration: none;
+ padding: 10px 20px;
+ line-height: normal;
+ font-size: 30px;
+ font-weight: bolder;
+ -webkit-transition: all 500ms ease;
+ -o-transition:all 500ms ease;
+ transition: all 500ms ease;
+ font-family:'Handlee', cursive; 
+}
+   
+header nav a:hover{
+ background:#f56f3a ;
+ border-radius: 50px;
+}
+
+.page-nave{
+ border: 1px solid black;
+ display:inline;
+ padding: 10px 20px 5px 20px;
+ color:#8ac9ee;
+ text-align:center;
+ border-radius:20px;
+ text-shadow:2px 2px 2px #C1D9D9;
+ font-family:'Baloo Tammudu 2', 'cursive';
+
+}
+
+  
+h1 { 
+ text-align: center;
+ color:rgb(255, 255, 255);
+ font-family:'Handlee', cursive;  
+ font-size: 35px;
+ padding: 20px 70px 0px 0px;
+ margin-left:400px;
+ display:flex; 
+ margin-top: 20px;
+}
+
+
+.portada{
+   color: #f2f2f2;
+   width: 200px;   
+   float: left;
+   margin: 20px 0px 10px 10px;
+   display: flex;
+   border-radius: 10px;
+}
+   
+h2{
+ display:block ;
+ background-color:rgb(255, 255, 255);
+ color:#384D59;
+ border-radius: 10px; 
+ font-family:'Handlee', cursive;  
+ text-align: center;
+ margin: 10px 0px;
+}
+
+h3{
+   display:inline-flex;
+   background-color:rgb(255, 255, 255);
+   color:#384D59;
+   border-radius: 10px; 
+   font-family:'Handlee', cursive;  
+   text-align:left;
+   margin: 0px 40px;
+   padding: 2px 5px;
+}
+
+   
+.container1{
+ display:flex;
+ flex-wrap: wrap;
+ justify-content:space-evenly;
+ align-items:flex-start;
+ background-image: url(IMG/fondo2.png);
+ 
+ 
+      
+}
+
+.button-comprar{
+   transition-duration:0.4s;
+   display: inline-flex;
+   margin: 10 px 0px;
+   padding: 5px 10px;
+   background-color:#384D59;
+   color:rgb(255, 255, 255);
+   border-radius: 5px; 
+   font-family:'Handlee', cursive;  
+   left: 80px;
+   font-size:large;  
+   text-decoration: none;
+        
+}
+
+.button-comprar:hover{
+   background-color: blue;
+   border: cornsilk;
+   
+     
+}
+   
+.producto{
+  margin:50px;
+  padding: 2px 16px;
+}
+
+.producto:hover{
+   box-shadow: 0 8px 16px 0 black;
+   background-color:#A4BABF;
+}
+
+.producto img{
+  width: 300px;
+  border-radius: 20px;
+  text-decoration: none;
+
+  
+}  
+       
+
+
+    
+      
+.formulario{
+   background-color:ivory;
+   display: inline-block;
+   padding: 20px;
+   margin:38px 100px 50px 100px;
+   border-radius:20px;
+   text-align:left;
+   font-weight:bolder;
+   font-size:larger;
+   color:#446a80;
+   box-shadow: 2px 4px 15px 5px #000;
+   font-family:'Handlee', cursive;  
+}
+
+form input{
+   display:block;    
+   color:#384D59;
+   border-radius: 10px;
+   font-family:'Handlee', cursive;
+   margin:5px 5px 5px 5px;
+   width: 180px;
+   font-size:larger;
+   text-align: center;
+} 
+
+.buttonValidar{
+   display: flex;
+   background-color:#384D59;
+   color:rgb(255, 255, 255);
+   border-radius: 10px; 
+   font-family:'Handlee', cursive;  
+   font-size: x-large;
+   width:100px;
+   margin-left: 50%;
+   transform: translateX(-50%);
+   
+        
+}
+       
+.card{
+   width: 500px;
+   height: 300px;
+   border-top:1px  blue;
+   border-left: 1px blue;
+   border-radius: 10px;
+   backdrop-filter:blur(7px);
+   box-shadow: 4px 4px 4px black;
+   cursor: pointer;
+   font-family:'Handlee', cursive; 
+   margin:100px 100px 50px 100px;
+   background:url(IMG/fondo\ tarjeta\ masterCard.png);
+   background-size: cover;
+}
+
+.MasterCard{
+   width: 80px;
+   height: 80px;
+   background:url(IMG/logo-mastercard-4096.png);
+   filter: brightness(0.8);
+   background-size: cover;
+   position:relative;
+   top: 10px;
+   left: 370px;
+}
+
+.chip{
+   width: 50px;
+   height: 50px;
+   margin: 25px;
+   background: url(IMG/chip-card.png);
+   background-size: cover;
+   position: relative;
+   top: 0px;
+   left: 40 px;
+}
+
+.card-number{
+        
+   width: 100px;
+   height: 100px;
+   position: relative;
+   top: 25px;
+   left: 30px;
+   font-family:'Orbitron', sans-serif;
+   font-size:25px;
+   letter-spacing: 5px;
+   color:#9f842a;
+   text-shadow:2px 2px 2px  rgb(20, 14, 0);
+}
+
+.meta{
+   display:flex;
+   width: 370 px;
+   justify-content: space-between;
+}
+
+.name{ 
+   width: 100px;
+   height: 1000px;
+   position: relative;
+   top: 20px;
+   left: 30px;
+   font-family: 'Orbitron', sans-serif;
+   font-size: 23px;
+   letter-spacing: 3px;
+   color:black;
+   text-shadow:2px 2px 2px blanchedalmond;
+}
+
+footer{
+   width: 100%;
+   margin-top:2px;
+
+}
+footer .redesSociales{
+   background-color:rgb(21, 15, 44) ;
+   display:flex;
+   flex-direction: row;
+   justify-content:left;
+   flex-wrap: wrap;
+  
+   padding: 10px 5px;
+} 
+
